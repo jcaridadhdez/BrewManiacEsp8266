@@ -28,9 +28,11 @@
 *   for the usage of some PINs may involve I2C IO expander
 */
 
+#define EnableMultiSensor
+
 
 #ifdef EnableMultiSensor
-#define MaximumNumberOfSensors 5
+#define MaximumNumberOfSensors 3
 #else
 #define MaximumNumberOfSensors 1
 #endif
@@ -41,7 +43,7 @@
 #endif
 
 #define UsePaddleInsteadOfPump false
-#define SecondaryHeaterSupport false
+#define SecondaryHeaterSupport true
 #define SpargeHeaterSupport false
 
 
@@ -56,6 +58,7 @@
 
 // manual control over pump during mash
 // !!! NOT really options.
+//#define  really options.
 //#define SwapSerial false
 // changes the UART pins to use GPIO13 and GPIO15 as RX and TX.
 //- See more at: http://www.esp8266.com/viewtopic.php?f=23&t=6394#sthash.5cMDbhuW.dpuf
