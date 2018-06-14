@@ -30,9 +30,8 @@
 
 #define EnableMultiSensor
 
-
 #ifdef EnableMultiSensor
-#define MaximumNumberOfSensors 3
+#define MaximumNumberOfSensors 5
 #else
 #define MaximumNumberOfSensors 1
 #endif
@@ -44,7 +43,7 @@
 
 #define UsePaddleInsteadOfPump false
 #define SecondaryHeaterSupport true
-#define SpargeHeaterSupport false
+#define SpargeHeaterSupport true
 
 
 #define LCD_USE_SSD1306 false
